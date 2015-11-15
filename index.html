@@ -1,0 +1,156 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta https-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Landing Page</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		
+		<style>
+			.navbar-brand{
+				font-size:1.8em;
+			}
+
+			#topContainer{
+				background-image: url("bgimg.jpg");
+				height: 400px;
+				width: 100%;
+				background-size:cover;
+			}
+
+			#topRow{
+				margin-top: 100px;
+				text-align: center;
+			}
+				#topRow h1{
+					font-size:300%;
+				}
+
+			.margin-top{
+				margin-top: 30px;
+			}
+
+			.margin-bottom{
+				margin-bottom: 30px;
+			}
+
+			.bold{
+				font-weight: bold;
+			}
+
+			.center{
+				text-align: center;
+			}
+
+			.title{
+				margin-top: 100px;
+				font-size: 300%;
+			}
+
+			#footer{
+				background-color: #B0D1FB;
+				padding-bottom: 50px;
+				width:100%;
+			}
+
+			.app-img{
+				width:250px;
+			}
+				.app-img:hover{
+					cursor: pointer;
+				}
+		</style>		
+	</head>
+<body>
+	
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="">My App</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#download">Download The App</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="email" placeholder="Email" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control"/>
+					</div>
+					<button class="btn btn-success">Log In</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container content-container" id="topContainer">
+		<div class="row" id="topRow">
+			<div class="col-lg-6 col-md-6 col-md-offset-3 col-lg-offset-3">
+				<h1 class="maring-top">My Awesome App</h1>
+				<p class="lead"> This is why you should download this fantastic app.</p>
+				<p>Some more information about the app. You can go into a little more details here if you want to.</p>
+				<p class="bold margin-top">Interested? Join our mailing list.</p>
+				<form action="" class="margin-top">
+					<div class="input-group">
+						<span class="input-group-addon">@</span>
+						<input type="email" class="form-control" placeholder="Your email"/>
+					</div>
+					<input type="Submit" class="btn btn-success btn-lg margin-top"/>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row center">
+			<h1 class="center title">Why this App is awesome?</h1>
+			<p class="lead">Summary of the App's awesomeness</p>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 class="glyphicon glyphicon-music">Header</h2>
+				<p>A brief description of one of the best feature of your app. Maybe a little more text. brief description of one of the best feature of your app. Maybe a little more text.</p>
+				<button class="btn btn-success margin-top"> Sign up!</button>
+			</div>
+			<div class="col-md-4">
+				<h2 class="glyphicon glyphicon-off">Header</h2>
+				<p>A brief description of one of the best feature of your app. Maybe a little more text. brief description of one of the best feature of your app. Maybe a little more text.</p>
+				<button class="btn btn-success margin-top">Sign up!</button>
+			</div>
+			<div class="col-md-4">
+				<h2 class="glyphicon glyphicon-pencil">Header</h2>
+				<p>A brief description of one of the best feature of your app. Maybe a little more text. brief description of one of the best feature of your app. Maybe a little more text.</p>
+				<button class="btn btn-success margin-top">Sign up!</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container margin-top" id="footer">
+		<div class="row">
+			<h1 class="center title">
+				Download The App!
+			</h1>
+
+			<p class="lead center">Why should I download the App?</p>
+			<p class="center"><img class="app-img" src="appstore.png" alt="appstore_img"></p>
+			<p class="center"><img class="app-img" src="googleplay.png" alt="googleplay_img"></p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+		$('.content-container').css('min-height', $(window).height());
+	</script>
+</body>
+</html>
